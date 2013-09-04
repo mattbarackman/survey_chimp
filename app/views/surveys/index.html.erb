@@ -1,0 +1,11 @@
+<h1> Surveys </h1>
+
+<% if @surveys %>
+  <ul>
+  <% @surveys.each do |survey| %>
+    <h2><%= survey.name %></h2>
+  <% end %>
+  </ul>
+<% else %>
+  <h2>There are no surveys yet.</h2>
+<% end %>
