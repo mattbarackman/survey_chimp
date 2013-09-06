@@ -1,0 +1,5 @@
+<h1><%= @survey.name %></h1>
+
+<%= render partial: "questions/question", :collection => @survey.questions, as: :question  %>
+
+<%= link_to "Edit Survey", edit_survey_path(@survey) %>

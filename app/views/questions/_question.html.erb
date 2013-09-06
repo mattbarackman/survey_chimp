@@ -1,0 +1,4 @@
+<p><%= question.content %></p>
+<ul>
+  <%= render partial: "answers/answer", :collection => question.answers, :as => :answer %>
+</ul>

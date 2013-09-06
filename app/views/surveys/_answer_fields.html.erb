@@ -1,0 +1,5 @@
+<%= f.inputs do %>
+  <%= f.input :content, :label => "Answer" %>
+  <%= f.input :_destroy, :as => :hidden %>
+  <%= link_to "remove answer", '#', class: "remove_fields indent", remote: true %>
+<% end %>

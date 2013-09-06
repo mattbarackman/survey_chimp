@@ -9,7 +9,15 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require formtastic
  *= require_tree .
  */
 
- @import "twitter/bootstrap";
+.remove_fields {
+  color: red;
+  display: block;
+}
+
+.indent {
+  margin-left: 8%;
+}
